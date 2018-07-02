@@ -72,8 +72,4 @@ def turn_count
     if token == "X" || token == "O"
       turns += 1
     end
-  
-def current_player
-    turn_count.even? ? "X" : "O"
   end
-end
