@@ -42,10 +42,14 @@ end
 end
 
 # position_take? method
-def position_taken?(index)
-   @board[index] != " "
+def position_taken?(board, index)
+  if @board[index] == " " or @board[index] == ""|| @board[index] == NIL
+    FALSE
+  else
+    TRUE
+  end
 end
-  
+
 # valid_move? method
 def valid_move?(index)
   if index.between?(0,8) && !position_taken?(index)
