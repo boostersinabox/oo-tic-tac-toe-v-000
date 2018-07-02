@@ -41,8 +41,8 @@ def move(index, token)
 end
 
 # position_take? method
-def position_taken?(board, index)
-  if board[index] == " " or board[index] == ""|| board[index] == NIL
+def position_taken?(index)
+  if @board[index] == " " or board[index] == ""|| board[index] == NIL
     FALSE
   else
     TRUE
@@ -50,6 +50,4 @@ def position_taken?(board, index)
   
   
   
-end
-
 end
