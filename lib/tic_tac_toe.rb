@@ -3,7 +3,6 @@ class TicTacToe
 def initialize
   @board = [" "," "," "," "," "," "," "," "," "]
 end
-end
 
 # Set winning combinations
 WIN_COMBINATIONS = [
