@@ -66,23 +66,22 @@ else
 end
 
 # turn_count method
-#def turn_count
- # turns = 0
-  #@board.each do |played|
-   # if played == "X" || played == "O"
-    #  turns += 1
-    #else
-    #turn
-  #end
-  #display_board
-#end
-
 def turn_count(board)
   turns = 0
-  @board.each do |played|
+  board.each do |played|
     if played == "X" || played == "O"
       turns += 1
     end
   end
   turns
 end
+
+# method current_player
+
+def current_player(board)
+  if turn_count(board) % 2 == 0
+  "X"
+  else 
+  "O"
+  end
+end  
