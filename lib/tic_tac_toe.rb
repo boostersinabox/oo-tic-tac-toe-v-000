@@ -26,6 +26,6 @@ def display_board
 end
 
 # Input to index
-
+def input
 
 
