@@ -33,7 +33,7 @@ def input_to_index(user_input)
 end
 
 #sample user_input to use until the CLI is built
-#user_input = "6"
+user_input = "1"
 
 # move method using array, index & X or O 
 def move(index, token)
