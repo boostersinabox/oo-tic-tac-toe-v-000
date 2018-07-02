@@ -4,7 +4,6 @@ class TicTacToe
     @board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
   end
 
-
 # Set winning combinations
 WIN_COMBINATIONS = [
   [0,1,2],
@@ -108,5 +107,4 @@ end
     turn until over?
     puts winner ? "Congratulations #{winner}!" : "Cat's Game!"
   end
-
 end
