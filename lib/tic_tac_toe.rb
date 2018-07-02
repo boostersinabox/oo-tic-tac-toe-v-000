@@ -43,7 +43,7 @@ end
 
 # position_taken? method
 def position_taken?(index)
-  @board[index] = !""
+  @board[index] !=""
   end
 
 # valid_move? method
