@@ -42,7 +42,7 @@ end
 
 # position_take? method
 def position_taken?(index)
-  if @board[index] == " " or board[index] == ""|| board[index] == NIL
+  if @board[index] == " " or @board[index] == ""|| @board[index] == NIL
     FALSE
   else
     TRUE
