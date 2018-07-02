@@ -53,4 +53,3 @@ def valid_move?(board, index)
     FALSE
   end
 
-end
