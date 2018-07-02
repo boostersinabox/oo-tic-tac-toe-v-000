@@ -25,9 +25,13 @@ def display_board
   puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
 end
 
-# Input to index
+# input_to_index
+# convert user input into a integer, minus 1 because the array starts with zero
+
 def input_to_index(user_input)
-  user_input.to_i -1
+  user_input.to_i - 1
 end
+
+
 
 end
