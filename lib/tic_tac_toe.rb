@@ -65,6 +65,7 @@ else
   display_board
 end
 
+# turn count - 
 def turn_count(board)
   # board.count{|token| token == "X" || token == "O"}
 
