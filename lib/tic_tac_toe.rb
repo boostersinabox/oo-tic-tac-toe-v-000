@@ -66,9 +66,9 @@ else
 end
 
 # turn count - board.count{|token| token == "X" || token == "O"}
-def turn_count(board)
+def turn_count
   turns = 0
-  board.each do |token|
+  @board.each do |token|
     if token == "X" || token == "O"
       turns += 1
     end
