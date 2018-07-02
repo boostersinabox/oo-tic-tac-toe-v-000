@@ -32,6 +32,9 @@ def input_to_index(user_input)
   user_input.to_i - 1
 end
 
+#sample user_input to use until the CLI is built
+user_input = "6"
+
 # move method using array, index & X or O 
 def move(index, token)
   board[index] = token
