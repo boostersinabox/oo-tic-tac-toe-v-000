@@ -80,3 +80,41 @@ end
 def current_player(board)
   turn_count(board) % 2 == 0 ? "X" : "O"
 end
+
+#Won? 
+  def won?
+    WIN_COMBINATIONS.any? do |combo|
+      if position_taken?(combo[0]) && @board[combo[0]] == @board[combo[1]] && @board[combo[1]] == @board[combo[2]]
+        return combo
+      end
+    end
+  end
+
+#Full?  
+  def full?
+    @board.all?{|square| square != " " }
+  end
+
+#Draw?  
+  def draw?
+    full? && !won?
+  end
+
+#Over?  
+  def over?
+    won? || draw?
+  end
+
+#Winner
+  def winner
+    if combo = won?
+      @board[combo[0]]
+    end
+  end
+
+#Play
+  def play
+    turn until over?
+    puts winner ? "Congratulations #{winner}!" : "Cat's Game!"
+  end
+end
