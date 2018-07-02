@@ -48,7 +48,13 @@ def position_taken?(index)
     TRUE
   end
   
-  
+# valid_move? method
+def valid_move?(index)
+  if index.between?(0,8) && !position_taken?(index)
+    TRUE
+  else
+    FALSE
+  end  
   
   
   
