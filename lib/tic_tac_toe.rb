@@ -71,6 +71,6 @@ def turn_count
   @board.each do |played|
     if played == "X" || played == "O"
       turns += 1
-    end
+    else
     turn
   end
