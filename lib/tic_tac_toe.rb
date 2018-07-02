@@ -39,7 +39,6 @@ user_input = "1"
 def move(index, token)
   @board[index] = token
   end
-end
 
 # position_taken? method
 def position_taken?(index)
