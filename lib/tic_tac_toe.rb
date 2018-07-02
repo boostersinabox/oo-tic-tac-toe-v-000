@@ -51,7 +51,7 @@ def valid_move?(index)
     end
   end
   
-  # turn method
+# turn method
 def turn
   puts "Please enter 1-9:"
   user_input = gets.strip
@@ -66,9 +66,9 @@ else
 end
 
 # turn_count method
-def turn_count(board)
+def turn_count
   turns = 0
-  board.each do |played|
+  @board.each do |played|
     if played == "X" || played == "O"
       turns += 1
     end
@@ -78,8 +78,8 @@ end
 
 # method current_player
 
-def current_player(board)
-  if turn_count(board) % 2 == 0
+def current_player
+  if turn_count % 2 == 0
   "X"
   else 
   "O"
