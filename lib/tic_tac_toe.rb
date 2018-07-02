@@ -41,14 +41,10 @@ def move(index, token)
 end
 end
 
-# position_take? method
+# position_taken? method
 def position_taken?(index)
-  if @board[index] == " " or @board[index] == ""|| @board[index] == NIL
-    FALSE
-  else
-    TRUE
+  @board[index] = !""
   end
-end
 
 # valid_move? method
 def valid_move?(index)
