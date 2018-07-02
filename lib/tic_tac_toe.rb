@@ -44,6 +44,5 @@ def move(index, token)
 def position_taken?(index)
   @board[index] != " "
   end
-end
 
 end
