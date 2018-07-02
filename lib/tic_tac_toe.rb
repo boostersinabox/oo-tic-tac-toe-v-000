@@ -74,3 +74,5 @@ def turn_count
     else
     turn
   end
+  display_board
+end
