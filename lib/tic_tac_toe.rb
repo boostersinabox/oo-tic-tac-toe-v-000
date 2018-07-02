@@ -1,3 +1,4 @@
+# Initialize the class & define the board
 class TicTacToe
 def initialize
   @board = [" "," "," "," "," "," "," "," "," "]
