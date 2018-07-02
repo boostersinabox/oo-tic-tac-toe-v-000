@@ -65,9 +65,15 @@ else
   display_board
 end
 
-def turn_count
-    @board.count{|square| square != " " }
+def turn_count(board)
+  turns = 0
+  board.each do |played|
+    if played == "X" || played == "O"
+      turns += 1
+    end
   end
+  turns
+end
   
 def current_player
     turn_count.even? ? "X" : "O"
