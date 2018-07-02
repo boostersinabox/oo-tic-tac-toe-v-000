@@ -38,13 +38,11 @@ user_input = "1"
 # move method using array, index & X or O 
 def move(index, token)
   @board[index] = token
-end
+  end
 end
 
 # position_taken? method
 def position_taken?(index)
   @board[index] != " "
   end
-
-
 end
