@@ -65,4 +65,13 @@ else
   display_board
 end
 
-
+# turn_count method
+def turn_count
+  turns = 0
+  @board.each do |played|
+    if played == "X" || played == "O"
+      turns += 1
+    end
+  end
+  turns
+end
