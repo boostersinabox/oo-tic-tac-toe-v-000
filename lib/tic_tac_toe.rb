@@ -37,7 +37,7 @@ user_input = "1"
 
 # move method using array, index & X or O 
 def move(index, token)
-  board[index] = token
+  @board[index] = token
 end
 
 
