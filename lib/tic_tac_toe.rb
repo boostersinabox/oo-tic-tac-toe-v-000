@@ -73,5 +73,3 @@ def turn_count
       turns += 1
     end
   end
-  turns
-end
