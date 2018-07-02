@@ -79,7 +79,7 @@ end
 
 def turn_count(board)
   turns = 0
-  board.each do |played|
+  @board.each do |played|
     if played == "X" || played == "O"
       turns += 1
     end
