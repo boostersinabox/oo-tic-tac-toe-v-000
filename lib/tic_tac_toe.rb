@@ -1,8 +1,15 @@
 # Initialize the class & define the board
 class TicTacToe
-def initialize
+def initialize(board)
   @board = [" "," "," "," "," "," "," "," "," "]
 end
+def board =(board)
+  @board = board
+end
+def board
+  @board
+end
+
 
 # Set winning combinations
 WIN_COMBINATIONS = [
