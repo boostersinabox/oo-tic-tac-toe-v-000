@@ -111,13 +111,11 @@ end
     if combo = won?
       @board[combo[0]]
     end
-  end
 
 #Play
   def play
     turn until over?
     puts winner ? "Congratulations #{winner}!" : "Cat's Game!"
   end
-end
 
 end
