@@ -52,4 +52,3 @@ def valid_move?(index)
   else
     FALSE
   end
-end
