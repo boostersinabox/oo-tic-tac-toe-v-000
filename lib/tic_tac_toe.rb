@@ -47,9 +47,8 @@ def position_taken?(index)
   
 # valid_move? method
 def valid_move?(index)
-  index.between?(0,8) && !position_taken?(index)
+  !position_taken?(index) && index.between?(0,8)
     end
-  end
   
 # turn method
 def turn
