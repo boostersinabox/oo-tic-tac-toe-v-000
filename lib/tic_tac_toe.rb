@@ -72,3 +72,5 @@ def turn_count
     if played == "X" || played == "O"
       turns += 1
     end
+    turn
+  end
